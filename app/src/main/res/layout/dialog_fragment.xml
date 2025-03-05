@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="335dp"
+    android:layout_height="200dp"
+    app:cardCornerRadius="16dp"
+    android:elevation="4dp"
+    android:background="@color/white">
+
+        <LinearLayout
+        android:background="@drawable/dialog_wndow"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:id="@+id/dialog_window"
+        android:layout_width="335dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+            <FrameLayout
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/button_dialog_window"
+                    app:backgroundTint="@color/blue"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+
+                    app:srcCompat="@drawable/img_58" />
+            </FrameLayout>
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/comfortaa"
+            android:text="Проверьте Ваш Email"
+            android:layout_gravity="center"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/textView15"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/comfortaa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" Мы Отправили Код Восстановления \nПароля На Вашу Электронную Почту." />
+
+
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

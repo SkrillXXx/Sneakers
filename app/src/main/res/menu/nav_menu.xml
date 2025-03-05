@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/img_11"
+            android:title="Профиль"
+            android:iconTint="@color/white"
+            />
+        <item
+            android:id="@+id/cart"
+            android:icon="@drawable/img_15"
+            android:title="Корзина"
+            android:iconTint="@color/white"
+            />
+        <item
+            android:iconTint="@color/white"
+            android:id="@+id/like"
+            android:icon="@drawable/img_61"
+            android:title="Избранное"
+            />
+        <item
+            android:iconTint="@color/white"
+            android:id="@+id/zakaz"
+            android:icon="@drawable/img_62"
+            android:title="Заказы"
+            />
+        <item
+            android:iconTint="@color/white"
+            android:id="@+id/yved"
+            android:icon="@drawable/img_10"
+            android:title="Уведомления"
+            />
+        <item
+            android:iconTint="@color/white"
+            android:id="@+id/nastroiki"
+            android:icon="@drawable/img_63"
+            android:title="Настройки"
+            />
+    </group>
+    <item
+        android:title="">
+        <menu>
+            <item
+             android:iconTint="@color/white"
+             android:id="@+id/vixod"
+             android:icon="@drawable/img_64"
+             android:title="Выйти"
+            />
+        </menu>
+    </item>
+
+
+
+
+
+</menu>
