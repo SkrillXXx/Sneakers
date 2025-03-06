@@ -13,13 +13,13 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sneakers.R
-
 class OTPVerification : AppCompatActivity() {
 
     private lateinit var countdownText: TextView
     private lateinit var restartButton: TextView
-    private var countdownTime: Long = 60 * 1000 // 30 секунд в миллисекундах
+    private var countdownTime: Long = 60 * 1000 // 60 секунд в миллисекундах
     private lateinit var editTexts: List<EditText>
+    private var isTimerRunning = false // Флаг для отслеживания состояния таймера
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,7 +52,9 @@ class OTPVerification : AppCompatActivity() {
 
         // Обработчик нажатия на кнопку перезапуска таймера
         restartButton.setOnClickListener {
-            startCountdown(countdownTime)
+            if (!isTimerRunning) { // Проверяем, закончился ли таймер
+                startCountdown(countdownTime)
+            }
         }
     }
 
@@ -86,6 +88,7 @@ class OTPVerification : AppCompatActivity() {
     }
 
     private fun startCountdown(timeInMillis: Long) {
+        isTimerRunning = true // Устанавливаем флаг, что таймер запущен
         object : CountDownTimer(timeInMillis, 1000) {
             @SuppressLint("DefaultLocale")
             override fun onTick(millisUntilFinished: Long) {
@@ -95,6 +98,7 @@ class OTPVerification : AppCompatActivity() {
 
             override fun onFinish() {
                 countdownText.text = "Время вышло!"
+                isTimerRunning = false // Устанавливаем флаг, что таймер завершен
             }
         }.start()
     }
