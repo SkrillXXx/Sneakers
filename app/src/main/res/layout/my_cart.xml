@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/edit_text">
@@ -30,8 +31,126 @@
             android:text="Корзина"
 
             android:textSize="16dp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold">
+
+        </TextView>
 
 
     </FrameLayout>
+    <FrameLayout
+        android:background="@color/white"
+        android:id="@+id/fragment_cart"
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_marginTop="543dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Frame">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сумма"
+            android:textColor="@color/grey"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:fontFamily="@font/comfortaa"
+            android:layout_gravity="left"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₽753.95"
+            android:textColor="@color/bl"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="25dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:fontFamily="@font/comfortaa"
+            android:layout_gravity="right"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Доставка"
+            android:textColor="@color/grey"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:fontFamily="@font/comfortaa"
+            android:layout_gravity="left"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₽60.20"
+            android:textColor="@color/bl"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="25dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:fontFamily="@font/comfortaa"
+            android:layout_gravity="right"
+            />
+        <ImageView
+            android:layout_width="358dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_68"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Итого"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:fontFamily="@font/comfortaa"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₽814.15"
+            android:textColor="@color/blue"
+            android:layout_marginRight="25dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:fontFamily="@font/comfortaa"
+            android:layout_gravity="center|right"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/butt_1"
+            android:layout_width="358dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="65dp"
+            android:background="@drawable/button_blue"
+            android:fontFamily="@font/comfortaa"
+            android:gravity="center"
+            android:text="Оформить заказ"
+            android:textSize="14sp"
+            app:backgroundTint="@color/blue" />
+
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="108dp"
+        android:text="... товара"
+        android:textStyle="bold"
+        android:fontFamily="@font/comfortaa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
